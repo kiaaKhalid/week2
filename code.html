@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="code.css">
+    <title>Dynamic Photo Gallery</title>
+</head>
+<body>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Styling with a Bandana" onmouseover="update('image1.jpg', 'Styling with a Bandana')" onmouseout="reset()">
+        <img src="image2.jpg" alt="Image 2" onmouseover="update('image2.jpg', 'Alt Text for Image 2')" onmouseout="reset()">
+        <img src="image3.jpg" alt="Image 3" onmouseover="update('image3.jpg', 'Alt Text for Image 3')" onmouseout="reset()">
+    </div>
+    <div class="gallery-info" id="gallery-info">
+        <p id="image-source"></p>
+        <p id="image-alt"></p>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
