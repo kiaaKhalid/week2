@@ -1,20 +1,42 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
 
-img {
-    width: 150px;
-    height: 150px;
-    cursor: pointer;
-}
+        .box {
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            text-align: center;
+        }
 
-.gallery-info {
-    margin-top: 20px;
-}
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (min-width: 772px) {
+            .box {
+                width: 45%;
+            }
+
+            .box img {
+                max-height: 30vh;
+            }
+        }
+
+        @media screen and (min-width: 998px) {
+            .box {
+                width: 30%;
+            }
+        }
